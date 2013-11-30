@@ -1,0 +1,21 @@
+README:
+1. Data extracted from Yelp page:
+   Business Name,
+   Business-URL, 
+   Phone-no.,
+   Business-Address
+
+2. Then, we go to the business url. Sometimes, a url is no longer valid, so a timeout feature has been implemented. And also, there is mechanism to catch any exception if occurs.
+
+3. At the business page, I first look for the existence of contact-us page. if it exists I open that link, handling similar exceptions. 
+
+4. At the contact-US page, following details are extracted:
+   contact-us email-id,
+   any other email id that might be present
+   Extra weightage is given to email-ids having substrings 'contact' or 'about'
+
+5. If contact-us page doesn't exist, a similar search is done on the main page
+
+6. Threading is also used so that multiple connections to different web-pages can be established at the same time
+
+7. Special care has been taken so that the program doesn't stop in any kind of circumstances. Even if the data is not clean enough.
