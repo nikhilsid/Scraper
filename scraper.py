@@ -249,8 +249,6 @@ class Page:
     #email scraping
     self.scrape_bizEmail ( str(self.bizContactSoup) ) #soup is being instead of source to avoid comments
 
-    #bizPhone scraping
-    #TO DO
 
 
   def scrape_bizName(self):
@@ -323,10 +321,6 @@ def main():
   write_results(path)
 
   
-  
-
-  
-
-
+   
 if __name__ == "__main__":
   main()
