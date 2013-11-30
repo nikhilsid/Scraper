@@ -314,9 +314,6 @@ def main():
     print count
     print '--o--\n'
 
-  print 'total count is ',
-  print count
-
   
   write_results(path)
 
